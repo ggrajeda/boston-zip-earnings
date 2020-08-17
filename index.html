@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link rel="stylesheet" type="text/css" href="ZillaSlab.css">
+
+<head>
+<style>
+h1 {font-family: 'Zilla Slab'; font-weight: 400;}
+h2, p {font-family: 'Zilla Slab'; font-weight: 400; text-align: left;}
+img {width: 120px;}
+.header {text-align: center; background: black; color: white; top: 0; left: 0; padding: 10px 0px 10px 0px; position: fixed; display: block; width: 100%;}
+.column img { padding: 0px 10px 0px 10px;}
+.blogDiv {width: 650px;}
+.gif {width: 240px;}
+</style>
+</head>
+
+<!-- Header -->
+<div class=header>
+<h1>Boston ZIP Earnings Project<h1>
+</div>
+
+<!-- About Section -->
+<center>
+<div class="blogDiv" style="margin-top: 130px;">
+<h2>About the Project</h2>
+
+<p>
+	This is a personal project to show how median city employee earnings have evolved over the past decade in the neighborhoods of Boston. <a href="https://data.boston.gov/dataset/employee-earnings-report">Earnings data</a> and <a href="https://data.boston.gov/dataset/boston-neighborhoods">geographical data</a> were taken from <a href="https://data.boston.gov/">Analyze Boston</a>, a recent effort by the city of Boston to encourage analysis of open data. This website is still a work in progress, so see the <b>Contact</b> section if you have any questions or comments.
+</p>
+</div>
+</center>
+
+<!-- Background Section -->
+<center>
+<div class="blogDiv">
+<h2>Background</h2>
+
+<p>
+	Boston is often argued to be a <a href="https://www.theatlantic.com/education/archive/2016/11/a-40-year-friendship-forged-by-the-challenges-of-busing/502733/">racially segregated city</a>. This issue of racial segregation is highly important, as segregation can lead to disparate levels of access to health care, capital, and good public education between racial and ethnic groups. My work focuses on a different, but related, subject: the issue of economic segregation. Using city employee earnings as a proxy for household income (see <b>Methods</b> for details), the infographics below show stunning disparities between the median incomes of Boston neighborhoods, even among adjacent neighborhoods. And these disparities appear to be getting <i>worse</i> over time&mdash;not better. Whether due to lower levels of city investment or lower quality of public education in these neighborhoods, the disparities between Boston neighborhoods must be addressed as soon as possible.
+</p>
+</div>
+</center>
+
+<!-- Graphics Section -->
+<center>
+<div class="blogDiv">
+<h2>Infographics</h2>
+
+<p>
+	Below are some infographics I created to visualize the growing income disparities between neighborhoods. For those unfamiliar with Boston's geography, concentrate on the middle of the city. Some of the darker neighborhoods in the chart are Fenway, Roxbury, Mission Hill, Dorchester, and Mattapan. These five neighborhoods have low median household incomes compared to the rest of Boston, suggesting that city employee earnings serve as a good proxy for household income. See <b>Methods</b> for more details.
+</p>
+
+<p>
+	The chart below shows how median city employee earnings have changed from 2011 (top left) to 2019 (bottom right). Blue and purple neighborhoods have lower earnings than orange and yellow neighborhoods.
+</p>
+
+<br>
+
+<div class="row">
+	<div class="column">
+		<img src="images/zip_earnings2011_noid.png">
+		<img src="images/zip_earnings2014_noid.png">
+		<img src="images/zip_earnings2017_noid.png">
+	</div>
+	<div class="column">
+		<img src="images/zip_earnings2012_noid.png">
+		<img src="images/zip_earnings2015_noid.png">
+		<img src="images/zip_earnings2018_noid.png">
+	</div>
+	<div class="column">
+		<img src="images/zip_earnings2013_noid.png">
+		<img src="images/zip_earnings2016_noid.png">
+		<img src="images/zip_earnings2019_noid.png">
+	</div>
+
+<p>
+	Here is a time-lapse gif of the preceding chart.
+</p>
+
+<img class="gif" src="images/zip_earnings.gif">
+
+<p>
+	Below is an animated cartogram, with neighborhoods shrinking and growing depending on whether their earnings in 2019 were low or high, respectively. Notice how it seems like Boston is being pinched in the middle.
+</p>
+<br>
+<img style="width: 410px;" src="images/zip_earnings2019.gif">
+
+</div>
+</center>
+
+<!-- Background Section -->
+<center>
+<div class="blogDiv">
+<h2>Methods</h2>
+
+<p>
+	Source code for the project can be found <a href="https://github.com/ggrajeda/ggrajeda.github.io/tree/master/boston-zip-earnings">here</a>.
+</p>
+
+<p>
+	One common question might be whether it is appropriate to use city employee earnings as a proxy for household income. The answer is somewhere between yes and no. While it seems that city employee earnings correlate strongly with household income reported by the census, the city employee earnings data exclude some obvious outliers on both sides of the spectrum. Homeless and unemployed folk are not included in this data set. Neither are wealthy financiers in the downtown area. Yet while city employee earnings data may not reflect the full range of incomes in Boston, the data set does a reasonable job of depicting general trends. And city data has one important advantage over census data: it is reported yearly. While census data gives us insight into trends at the macroscopic level, city data sets allow us to follow micro-trends.
+</p>
+
+<p>
+	Another question might be whether any controls were used. This project is admittedly observational, so I did not control for relevant variables like the average level of education in a neighborhood, or the race of a neighborhood, etc. The point of the project is not to make the claim that city employers are consciously discriminating against residents of a certain neighborhood. The goal of this project is to show that there are substantial disparities in income between the neighborhoods of Boston, disparities that may point to a deeper structural issue like inequality of opportunity.
+</p>
+
+</div>
+</center>
+
+<!-- Background Section -->
+<center>
+<div class="blogDiv">
+<h2>Future Improvements</h2>
+
+<p>
+	In the future, I want to make the infographics more readable to people unfamiliar with Boston's geography. I have some infographics with ZIP code labels, but they don't yet fit the aesthetic of the project. I have been working on labelling the larger Boston neighborhoods by name.
+</p>
+<p>
+	I also realize that the color scheme is not color-blind-friendly. I am working to find a color scheme that looks nice <i>and</i> allows color-blind folk to appreciate the project.
+</p>
+<p>
+	In the longer term, I want to see how these trends change when the data set is restricted to a particular field. One example might be education: How have the median incomes of teachers, principals, and superintendents in these neighborhoods changed over the past decade? I think that this sort of analysis could yield some interesting results.
+</p>
+</div>
+</center>
+
+<!-- Contact Section -->
+<center>
+<div class="blogDiv">
+<h2>Contact</h2>
+
+<p>
+	Contact me at <a href="">ggrajeda@princeton.edu</a> if you have any questions, suggestions, or concerns.
+</p>
+</div>
+</center>
+<br>
+<br>
+</html>
