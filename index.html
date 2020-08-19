@@ -7,11 +7,11 @@
 <style>
 h1 {font-family: 'Zilla Slab'; font-weight: 400;}
 h2, p {font-family: 'Zilla Slab'; font-weight: 400; text-align: left;}
-img {width: 120px;}
+img {width: 190px; onClick="window.open(this.src)"}
 .header {text-align: center; background: black; color: white; top: 0; left: 0; padding: 10px 0px 10px 0px; position: fixed; display: block; width: 100%;}
 .column img { padding: 0px 10px 0px 10px;}
-.blogDiv {width: 650px;}
-.gif {width: 240px;}
+.blogDiv {width: 740px;}
+.gif {width: 400px;}
 </style>
 </head>
 
@@ -37,92 +37,116 @@ img {width: 120px;}
 <h2>Background</h2>
 
 <p>
-	Boston is often argued to be a <a href="https://www.theatlantic.com/education/archive/2016/11/a-40-year-friendship-forged-by-the-challenges-of-busing/502733/">racially segregated city</a>. This issue of racial segregation is highly important, as segregation can lead to disparate levels of access to health care, capital, and good public education between racial and ethnic groups. My work focuses on a different, but related, subject: the issue of economic segregation. Using city employee earnings as a proxy for household income (see <b>Methods</b> for details), the infographics below show stunning disparities between the median incomes of Boston neighborhoods, even among adjacent neighborhoods. And these disparities appear to be getting <i>worse</i> over time&mdash;not better. Whether due to lower levels of city investment or lower quality of public education in these neighborhoods, the disparities between Boston neighborhoods must be addressed as soon as possible.
+	Boston is often argued to be a <a href="https://www.wbur.org/cognoscenti/2020/01/16/racial-segregation-boston-housing-ivan-espinoza-madrigal-oren-sellstrom-janelle-dempsey">racially segregated city</a>. This issue of racial segregation is highly important, as segregation can lead to disparate levels of access to health care, public education, and other forms of capital between racial and ethnic groups. My work focuses on a different, but related, subject: the issue of economic segregation. The infographics below show significant disparities between the median city employee salaries of Boston neighborhoods, even among adjacent neighborhoods. And these disparities appear to be getting slightly <i>worse</i> over time&mdash;not better. Whether due to lower levels of city investment or lower quality of public education in these neighborhoods, the economic disparities between Boston neighborhoods must be addressed.
 </p>
 </div>
 </center>
 
-<!-- Graphics Section -->
+<!-- Findings Section -->
 <center>
 <div class="blogDiv">
-<h2>Infographics</h2>
+<h2>Findings</h2>
 
 <p>
-	Below are some infographics I created to visualize the growing income disparities between neighborhoods. For those unfamiliar with Boston's geography, concentrate on the middle of the city. Some of the darker neighborhoods in the chart are Fenway, Roxbury, Mission Hill, Dorchester, and Mattapan. These five neighborhoods have low median household incomes compared to the rest of Boston, suggesting that city employee earnings serve as a good proxy for household income. See <b>Methods</b> for more details.
+	Below are some infographics I created to visualize the income disparities between neighborhoods. For those unfamiliar with Boston's geography, concentrate on the middle of the city. Some of the darker neighborhoods in the chart are Fenway, Roxbury, Mission Hill, Dorchester, and Mattapan. These five neighborhoods have low median household incomes compared to the rest of Boston, suggesting that city employee salaries may serve as a decent proxy for household income. See <b>Methods</b> for more details.
 </p>
 
 <p>
-	The chart below shows how median city employee earnings have changed from 2011 (top left) to 2019 (bottom right). Blue and purple neighborhoods have lower earnings than orange and yellow neighborhoods.
+	The chart below shows how median city employee salaries have changed from 2011 (top left) to 2019 (bottom right). Darker purple neighborhoods have lower salaries than orange neighborhoods. ZIP codes with fewer than twenty workers have been removed from the data set.
 </p>
-
 <br>
 
 <div class="row">
 	<div class="column">
 		<img src="images/zip_earnings2011_noid.png">
-		<img src="images/zip_earnings2014_noid.png">
-		<img src="images/zip_earnings2017_noid.png">
-	</div>
-	<div class="column">
 		<img src="images/zip_earnings2012_noid.png">
-		<img src="images/zip_earnings2015_noid.png">
-		<img src="images/zip_earnings2018_noid.png">
-	</div>
-	<div class="column">
 		<img src="images/zip_earnings2013_noid.png">
+	</div>
+	<br>
+	<div class="column">
+		<img src="images/zip_earnings2014_noid.png">
+		<img src="images/zip_earnings2015_noid.png">
 		<img src="images/zip_earnings2016_noid.png">
+	</div>
+	<br>
+	<div class="column">
+		<img src="images/zip_earnings2017_noid.png">
+		<img src="images/zip_earnings2018_noid.png">
 		<img src="images/zip_earnings2019_noid.png">
 	</div>
+</div>
 
+<br>
+<br>
 <p>
-	Here is a time-lapse gif of the preceding chart.
+	Notice how the center of the city remains dark while western Boston becomes lighter over time. Put simply, this chart shows that city employee salaries have risen substantially in West Roxbury, Hyde Park, and Roslindale, but not as much in Fenway, Roxbury, Mission Hill, Dorchester, or Mattapan. This will be discussed in more detail later. For the sake of visualization, here is a time-lapse gif of the chart above.
 </p>
+<br>
 
 <img class="gif" src="images/zip_earnings.gif">
 
 <p>
-	Below is an animated cartogram, with neighborhoods shrinking and growing depending on whether their earnings in 2019 were low or high, respectively. Notice how it seems like Boston is being pinched in the middle.
+	We might also want to visualize the breakdown of the most common city employee positions. Since we are studying a very specific subset of Boston workers, it is possible that a few positions have a disproportionate influence on our data. Below is a time-lapse gif showing the five most common city employee positions over the last decade (positions after the top five are not shown).  
 </p>
 <br>
-<img style="width: 410px;" src="images/zip_earnings2019.gif">
 
-</div>
+<img class="gif" src="images/common_jobs.gif">
+
+<br>
+<br>
+<p>
+	Clearly, a plurality of city employees are teachers. From 2011 to 2019, Boston has employed about three times more teachers than police officers. The next four common positions are police officers, paraprofessionals, fire fighters, and substitute teachers&mdash;all of which experience some fluctuation in their rankings while teachers maintain a steady number one spot.
+</p>
+
+<p>
+	This may pose an issue in our analysis, since teachers tend to be higher-paid employees. For reference, the median Boston Public School teacher salary has ranged between $80,000 and $96,500 over the past decade. The median salary of non-teacher employees ranges between $43,000 and $54,000. So we will subset into two groups: teachers and non-teachers.
+</p>
+
+<p>
+	Here is a time-lapse gif of median teacher salaries by neighborhood with the same color scale as before.
+</p>
+<br>
+
+<img class="gif" src="images/teacher_zip_earnings.gif">
+
+<br>
+<br>
+<p>
+	And a time-lapse gif of median non-teacher salaries by neighborhood.
+</p>
+<br>
+
+<img class="gif" src="images/non-teacher_zip_earnings.gif">
+
+<br>
+<br>
+<p>
+	At a glance, the results are unsurprising. On average, teachers make more money than non-teacher city employees, and so the first map is lighter than the second. However, upon closer inspection, we find that both maps exhibit three common trends. These are the central findings of this project: 
+</p>
+
+<p>
+	First, the salaries of the northeastern neighborhoods&mdash;not the islands&mdash;are relatively constant. These neighborhoods are Charlestown, East Boston, and South Boston. Second, the salaries of the southwestern neighborhoods&mdash;mainly West Roxbury and Hyde Park&mdash;seem to be rising. These neighborhoods started off well and ended up better. Third, the center of the city is noticeably darker than other areas, especially in comparison to southwestern Boston. In other words, city employees in Fenway, Roxbury, Mission Hill, Dorchester, and Mattapan are consisitently earning less than their counterparts in other neighborhoods&mdash;regardless of their occupation. Indeed, it is important to note that these trends hold among teachers and non-teachers. Thus, disparities between neighborhoods appear even when partitioning the data into blocks of comparable education and profession.
+</p>
+
 </center>
 
-<!-- Background Section -->
+<!-- Methods Section -->
 <center>
 <div class="blogDiv">
 <h2>Methods</h2>
 
 <p>
-	Source code for the project can be found <a href="https://github.com/ggrajeda/ggrajeda.github.io/tree/master/boston-zip-earnings">here</a>.
+	Source code for the project can be found <a href="https://github.com/ggrajeda/boston-zip-earnings">here</a>.
 </p>
 
 <p>
-	One common question might be whether it is appropriate to use city employee earnings as a proxy for household income. The answer is somewhere between yes and no. While it seems that city employee earnings correlate strongly with household income reported by the census, the city employee earnings data exclude some obvious outliers on both sides of the spectrum. Homeless and unemployed folk are not included in this data set. Neither are wealthy financiers in the downtown area. Yet while city employee earnings data may not reflect the full range of incomes in Boston, the data set does a reasonable job of depicting general trends. And city data has one important advantage over census data: it is reported yearly. While census data gives us insight into trends at the macroscopic level, city data sets allow us to follow micro-trends.
+	One common question might be whether it is appropriate to use city employee salaries as a proxy for household income. The answer is somewhere between yes and no. While it seems that city employee salaries correlate strongly with household income reported by the census, the former data set excludes some obvious outliers on both sides of the spectrum. Homeless and unemployed folk are not included in this city employee salary data. Neither are wealthy financiers in downtown Boston. Yet while city employee earnings may not reflect the full range of incomes in Boston, the data set does a reasonable job of depicting general trends. And city data has one important advantage over census data: it is reported yearly. While census data gives us insight into trends at the macroscopic level, city data sets allow us to follow micro-trends.
 </p>
 
 <p>
-	Another question might be whether any controls were used. This project is admittedly observational, so I did not control for relevant variables like the average level of education in a neighborhood, or the race of a neighborhood, etc. The point of the project is not to make the claim that city employers are consciously discriminating against residents of a certain neighborhood. The goal of this project is to show that there are substantial disparities in income between the neighborhoods of Boston, disparities that may point to a deeper structural issue like inequality of opportunity.
+	Another common question might be whether any controls were used. This project is admittedly exploratory, so apart from the blocking, I did not control for many relevant variables, and regrettably, there were not enough city employees in non-teaching jobs to subset by profession further than "teacher" and "non-teacher." Yet the point of the project is not to make the claim that city employers are consciously discriminating against residents of a certain neighborhood. The goal of this project is instead to show that there are substantial disparities in city employee earnings between the neighborhoods of Boston, disparities that may point to a deeper structural issue like inequality of opportunity.
 </p>
 
-</div>
-</center>
-
-<!-- Background Section -->
-<center>
-<div class="blogDiv">
-<h2>Future Improvements</h2>
-
-<p>
-	In the future, I want to make the infographics more readable to people unfamiliar with Boston's geography. I have some infographics with ZIP code labels, but they don't yet fit the aesthetic of the project. I have been working on labelling the larger Boston neighborhoods by name.
-</p>
-<p>
-	I also realize that the color scheme is not color-blind-friendly. I am working to find a color scheme that looks nice <i>and</i> allows color-blind folk to appreciate the project.
-</p>
-<p>
-	In the longer term, I want to see how these trends change when the data set is restricted to a particular field. One example might be education: How have the median incomes of teachers, principals, and superintendents in these neighborhoods changed over the past decade? I think that this sort of analysis could yield some interesting results.
-</p>
 </div>
 </center>
 
