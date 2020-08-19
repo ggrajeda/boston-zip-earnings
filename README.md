@@ -1,6 +1,16 @@
 # Boston ZIP Earnings Project
 
-## About the Project
+## Update
+This project is currently undergoing review to be hosted on the City of Boston's [Analyze Boston Showcase](https://data.boston.gov/showcase).
+
+## Table of Contents
+ * [Description](#description)
+ * [Background](#background)
+ * [Findings](#findings)
+ * [Methods](#methods)
+ * [Link](#link)
+
+## Description
 This is a personal project to show how median city employee earnings have evolved over the past decade in the neighborhoods of Boston. I was originally interested in looking at this data because my mother is a teacher in the Boston Public Schools, but what started out as peripheral interest eventually blossomed into its own larger project. [Earnings data](https://data.boston.gov/dataset/employee-earnings-report) and [geographical data](https://data.boston.gov/dataset/boston-neighborhoods) were taken from [Analyze Boston](https://data.boston.gov/), a recent effort by the city of Boston to encourage analysis of open data. This README is mostly a recapitulation of the information at the [project website](https://ggrajeda.github.io/boston-zip-earnings/).
 
 ## Background
@@ -12,7 +22,6 @@ Below are a few choropleth maps to help visualize the income disparities between
 The chart below shows how median city employee salaries have changed from 2011 (top left) to 2019 (bottom right). Darker purple neighborhoods have lower salaries than orange neighborhoods. ZIP codes with fewer than twenty workers have been removed from the data set.
 
 <br>
-
 <div class="row">
 	<div class="column">
 		<img src="images/zip_earnings2011_noid.png" width=200px>
@@ -32,7 +41,6 @@ The chart below shows how median city employee salaries have changed from 2011 (
 		<img src="images/zip_earnings2019_noid.png" width=200px>
 	</div>
 </div>
-
 <br>
 
 Notice how the center of the city remains dark while western Boston becomes lighter over time. Put simply, this chart shows that city employee salaries have risen substantially in West Roxbury, Hyde Park, and Roslindale, but not as much in Fenway, Roxbury, Mission Hill, Dorchester, or Mattapan. This will be discussed in more detail later. For the sake of visualization, here is a time-lapse gif of the chart above.
@@ -60,6 +68,8 @@ At a glance, the results are unsurprising. On average, teachers make more money 
 First, the salaries of the northeastern neighborhoods&mdash;not the islands&mdash;are relatively constant. These neighborhoods are Charlestown, East Boston, and South Boston. Second, the salaries of the southwestern neighborhoods&mdash;mainly West Roxbury and Hyde Park&mdash;seem to be rising. These neighborhoods started off well and ended up better. Third, the center of the city is noticeably darker than other areas, especially in comparison to southwestern Boston. In other words, city employees in Fenway, Roxbury, Mission Hill, Dorchester, and Mattapan are consisitently earning less than their counterparts in other neighborhoods&mdash;regardless of their occupation. Indeed, it is important to note that these trends hold among teachers and non-teachers. Thus, disparities between neighborhoods appear even when partitioning the data into blocks of comparable education and profession.
 
 ## Methods
+Source code for the project can be found in this repo.
+
 One common question might be whether it is appropriate to use city employee salaries as a proxy for household income. The answer is somewhere between yes and no. While it seems that city employee salaries correlate strongly with household income reported by the census, the former data set excludes some obvious outliers on both sides of the spectrum. The homeless and unemployed are not included in city employee salary data. Neither are wealthy financiers in downtown Boston. Yet while city employee earnings may not reflect the full range of incomes in Boston, the data set does a reasonable job of depicting general trends. And city data has one important advantage over census data: it is reported yearly. While census data gives us insight into trends at the macroscopic level, city data sets allow us to follow micro-trends.
 
 Another common question might be whether any controls were used. This project is admittedly exploratory, so apart from the blocking, I did not control for many relevant variables, and regrettably, there were not enough city employees in non-teaching jobs to subset by profession further than "teacher" and "non-teacher." But it is important to note that the point of the project is not to make the claim that city employers are consciously discriminating against residents of a certain neighborhood. The goal of this project is instead to show that there are substantial disparities in city employee earnings between the neighborhoods of Boston, disparities that may point to a deeper structural issue like inequality of opportunity.
