@@ -29,7 +29,7 @@ img {width: 190px; onClick="window.open(this.src)"}
 <h2>About the Project</h2>
 
 <p>
-	This is a personal project to show how median city employee earnings have evolved over the past decade in the neighborhoods of Boston. <a href="https://data.boston.gov/dataset/employee-earnings-report">Earnings data</a> and <a href="https://data.boston.gov/dataset/boston-neighborhoods">geographical data</a> were taken from <a href="https://data.boston.gov/">Analyze Boston</a>, a recent effort by the city of Boston to encourage analysis of open data. This website is still a work in progress, so see the <b>Contact</b> section if you have any questions or comments.
+	This is a personal project to show how median city employee earnings have evolved over the past decade in the neighborhoods of Boston. I was originally interested in looking at this data because my mother is a teacher in the Boston Public Schools, but what started out as peripheral interest eventually blossomed into its own larger project. <a href="https://data.boston.gov/dataset/employee-earnings-report">Earnings data</a> and <a href="https://data.boston.gov/dataset/boston-neighborhoods">geographical data</a> were taken from <a href="https://data.boston.gov/">Analyze Boston</a>, a recent effort by the city of Boston to encourage analysis of open data. This website is still a work in progress, so see the <b>Contact</b> section if you have any questions or comments.
 </p>
 </div>
 </center>
@@ -51,7 +51,7 @@ img {width: 190px; onClick="window.open(this.src)"}
 <h2>Findings</h2>
 
 <p>
-	Below are some infographics I created to visualize the income disparities between neighborhoods. For those unfamiliar with Boston's geography, concentrate on the middle of the city. Some of the darker neighborhoods in the chart are Fenway, Roxbury, Mission Hill, Dorchester, and Mattapan. These five neighborhoods have low median household incomes compared to the rest of Boston, suggesting that city employee salaries may serve as a decent proxy for household income. See <b>Methods</b> for more details.
+	Below are a few choropleth maps to help visualize the income disparities between neighborhoods. For those unfamiliar with Boston's geography, concentrate on the middle of the city. Some of the darker neighborhoods in the chart are Fenway, Roxbury, Mission Hill, Dorchester, and Mattapan. These five neighborhoods have relatively low median household incomes. Indeed, to some extent, city employee salaries can serve as a proxy for broader household income. See <b>Methods</b> for more details.
 </p>
 
 <p>
@@ -98,11 +98,11 @@ img {width: 190px; onClick="window.open(this.src)"}
 <br>
 <br>
 <p>
-	Clearly, a plurality of city employees are teachers. From 2011 to 2019, Boston has employed about three times more teachers than police officers. The next four common positions are police officers, paraprofessionals, fire fighters, and substitute teachers&mdash;all of which experience some fluctuation in their rankings while teachers maintain a steady number one spot.
+	Clearly, a plurality of city employees are teachers. From 2011 to 2019, Boston has employed about three times more teachers than cops. The next four most common positions are police officers, paraprofessionals, fire fighters, and substitute teachers&mdash;all of which experienced some fluctuation in their rankings throughout the decade while teachers maintained a steady number one spot.
 </p>
 
 <p>
-	This may pose an issue in our analysis, since teachers tend to be higher-paid employees. For reference, the median Boston Public School teacher salary has ranged between $80,000 and $96,500 over the past decade. The median salary of non-teacher employees ranges between $43,000 and $54,000. So we will subset into two groups: teachers and non-teachers.
+	The over-representation of teachers may pose an issue in our analysis, since teachers tend to be higher-paid employees. For reference, the median Boston Public School teacher salary has ranged between $80,000 and $96,500 from 2011 to 2019. The median salary of non-teacher employees, on the other hand, has ranged between $43,000 and $54,000. So we will subset into two groups: teachers and non-teachers.
 </p>
 
 <p>
@@ -143,11 +143,11 @@ img {width: 190px; onClick="window.open(this.src)"}
 </p>
 
 <p>
-	One common question might be whether it is appropriate to use city employee salaries as a proxy for household income. The answer is somewhere between yes and no. While it seems that city employee salaries correlate strongly with household income reported by the census, the former data set excludes some obvious outliers on both sides of the spectrum. Homeless and unemployed folk are not included in this city employee salary data. Neither are wealthy financiers in downtown Boston. Yet while city employee earnings may not reflect the full range of incomes in Boston, the data set does a reasonable job of depicting general trends. And city data has one important advantage over census data: it is reported yearly. While census data gives us insight into trends at the macroscopic level, city data sets allow us to follow micro-trends.
+	One common question might be whether it is appropriate to use city employee salaries as a proxy for household income. The answer is somewhere between yes and no. While it seems that city employee salaries correlate strongly with household income reported by the census, the former data set excludes some obvious outliers on both sides of the spectrum. The homeless and unemployed are not included in city employee salary data. Neither are wealthy financiers in downtown Boston. Yet while city employee earnings may not reflect the full range of incomes in Boston, the data set does a reasonable job of depicting general trends. And city data has one important advantage over census data: it is reported yearly. While census data gives us insight into trends at the macroscopic level, city data sets allow us to follow micro-trends.
 </p>
 
 <p>
-	Another common question might be whether any controls were used. This project is admittedly exploratory, so apart from the blocking, I did not control for many relevant variables, and regrettably, there were not enough city employees in non-teaching jobs to subset by profession further than "teacher" and "non-teacher." Yet the point of the project is not to make the claim that city employers are consciously discriminating against residents of a certain neighborhood. The goal of this project is instead to show that there are substantial disparities in city employee earnings between the neighborhoods of Boston, disparities that may point to a deeper structural issue like inequality of opportunity.
+	Another common question might be whether any controls were used. This project is admittedly exploratory, so apart from the blocking, I did not control for many relevant variables, and regrettably, there were not enough city employees in non-teaching jobs to subset by profession further than "teacher" and "non-teacher." But it is important to note that the point of the project is not to make the claim that city employers are consciously discriminating against residents of a certain neighborhood. The goal of this project is instead to show that there are substantial disparities in city employee earnings between the neighborhoods of Boston, disparities that may point to a deeper structural issue like inequality of opportunity.
 </p>
 
 </div>
