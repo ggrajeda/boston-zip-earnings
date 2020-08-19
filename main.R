@@ -67,7 +67,15 @@ for(year in c(2011:2019)) {
   
   teachers     <- data[data$TITLE == "Teacher",]
   non_teachers <- data[data$TITLE != "Teacher",]
+  
+  print(nrow(teachers))
+  print(nrow(non_teachers))
+
+  length(unique(non_teachers$TITLE))
 
   teacher_median[year-2010]     <- median(teachers$REGULAR, na.rm = TRUE)
   non_teacher_median[year-2010] <- median(non_teachers$REGULAR, na.rm = TRUE)
 }
+
+print(range(teacher_median))
+print(range(non_teacher_median))
